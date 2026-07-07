@@ -15,7 +15,6 @@ This repository contains code used for **EU-ETS under attack? The impact of carb
 └── README.md                # This file
 ├── checkpoints/             # Exemplary trained checkpoint (CRM+CfD, 16 agents)
 ├── excel_scenario_files/    # Base excel files with information for the Italian scenarios studied in the publication
-├── images                   # Graphical abstract from the pending publication
 ├── penalty_environments/    # Alternative environment implementations (with penalty used in section4)
 ├── utils/                   # Utility scripts for harnessing training data from RLLIB and final results from trained agents, plotting and analysis
 
