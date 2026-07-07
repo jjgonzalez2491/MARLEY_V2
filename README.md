@@ -84,32 +84,6 @@ Plotting utilities are provided in the `utils/` folder for generating market out
 
 ---
 
-## Citation
-
-If you use this framework in your research, please cite:
-```bibtex
-@article{gonzalez-ruiz_assessing_2025,
-	title = {Assessing {Long}-{Term} {Electricity} {Market} {Design} for {Ambitious} {Decarbonization} {Targets} using {Multi} {Agent} {Reinforcement} {Learning}},
-	url = {https://www.sciencedirect.com/science/article/pii/S2666546825001971},
-	doi = {https://doi.org/10.1016/j.egyai.2025.100665},
-	journal = {Energy and AI},
-	author = {Gonzalez-Ruiz, Javier and Rodriguez-Pardo, Carlos and Di Bella, Alice and Tavoni, Massimo},
-	year = {2025},
-}
-```
-
----
-
-## License
-
-This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
-
-[![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/) 
-
-This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms.
-
----
-
 ## Contact
 
 For questions, issues, or contributions, please contact: javier.gonzalez@cmcc.it and/or carlos.rodriguez@cmcc.it. 
