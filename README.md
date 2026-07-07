@@ -1,6 +1,4 @@
-# MARLEY: Multi-Agent Reinforcement Learning for Long-term Electricity Markets
-
-[Javier Gonzalez-Ruiz](https://www.eiee.org/member/javier-jose-gonzalez-ruiz/),[Carlos Rodriguez-Pardo](https://carlosrodriguezpardo.es/),[Alice Di Bella](https://www.eiee.org/member/alice-di-bella/), [Iacopo Savelli](https://green.unibocconi.eu/iacopo-savelli), [Massimo Tavoni](https://www.eiee.org/member/massimo-tavoni/)
+# MARLEY V2: EU-ETS under attack? The impact of carbon price suppression on the decarbonization of the power sector
 
 ## Overview
 
