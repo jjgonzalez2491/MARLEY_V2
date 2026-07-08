@@ -13,7 +13,7 @@ from shared_critic_encoder_bottleneck import SharedCriticTorchRLModule, AGENT_TY
 from ray import tune
 import numpy as np
 from ray.tune.registry import register_env
-from CM_CfD_EoM_Storage_V46_CM_CfD_planner_opt_tax_V80_CVaR_not_terminal_penalty_original import CM_EoM
+from CM_CfD_EU_ETS import CM_EoM
 from action_mask_rlm_new import TorchActionMaskRLM
 from ray.rllib.examples.algorithms.mappo.mappo import MAPPO, MAPPOConfig
 from ray.rllib.examples.algorithms.mappo.torch.shared_critic_torch_rl_module import SharedCriticTorchRLModule
