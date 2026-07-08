@@ -1,32 +1,3 @@
-"""
-gas_price_shock.py
-------------------
-Markov regime-switching shock model for natural gas prices in MARLEY.
-
-States:  0=Normal  1=Shock  2=Recovery
-
-Calibration (bimester time step):
-    - Shock arrival rate lam = 0.017 -> ~1 shock per ~12 years on average
-    - p_stay = 11/12  -> expected Shock duration = 12 bimesters (~2 years)
-                         (plus 1 bimester of Recovery -> total elevated ~13 bimesters)
-    - Peak multiplier ~ LogNormal(mu_log=ln(2), sigma_log=0.25), clipped to [1.3, 3.5]
-      -> median peak ~ 2x long-term price, with realistic dispersion
-
-Activation:
-    The module can be deactivated during periods where gas prices are driven
-    by an exogenous source (e.g. real forward curve at the start of the
-    simulation). While inactive, step() returns 1.0 and no state transitions
-    occur, so the chain remains in Normal and cannot "secretly" enter a shock
-    that would surface when activation flips on.
-
-Usage:
-    shock = GasPriceShockModel(seed=42)
-    shock.reset()
-    for t in range(T):
-        active = (t >= warmup_bimesters)         # e.g. forward curve covers warmup
-        mult = shock.step(active=active)
-        v_c_g[t] = v_c_g_baseline[t] * mult
-"""
 
 from typing import Optional, Tuple
 
