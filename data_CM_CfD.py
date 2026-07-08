@@ -1513,8 +1513,8 @@ if __name__ == "__main__":
 
     # ── Save all outputs ──────────────────────────────────────────────────────
     # Check if the directory exists, if not, create it
-    if not os.path.exists(f'CVaR_58/{string}'):
-        os.makedirs(f'CVaR_58/{string}')
+    if not os.path.exists(f'Folder_58/{string}'):
+        os.makedirs(f'Folder_58/{string}')
 
     outputs = {
         'energy_not_served.csv': energy_not_served,
@@ -1658,7 +1658,7 @@ if __name__ == "__main__":
     }
 
     for filename, array in outputs.items():
-        pd.DataFrame(array).to_csv(f'CVaR_58/{string}/{filename}')
+        pd.DataFrame(array).to_csv(f'Folder_58/{string}/{filename}')
 
     last_time = time.time()
 
