@@ -139,7 +139,7 @@ if __name__ == "__main__":
 
     curriculum_step = 1
 
-    dir_input_data = '050526 Entry data - Italy 2024 Alice - 16 Agents - Pypsa - 10 years - Super Tax - V2.xlsx'
+    dir_input_data = '050526 Entry data - Italy 2025 - 16 Agents - Pypsa - 10 years - Super Tax - V2.xlsx'
 
     demand_growth_type = "Deterministic"
 
