@@ -8,14 +8,15 @@ This repository contains code used for **EU-ETS under attack? The impact of carb
 
 ## Repository Structure
 ```
-└── CM_CfD.py                # Main RLlib environment implementation
-└── training_CM_CfD.py       # Training scripts and configuration
+└── training_IPPO.py         # Training scripts and configuration for IPPO
+└── training_MAPPO.py        # Training scripts and configuration for MAPPO
 └── data_CM_CfD.py           # Scripts for evaluating trained agents
 └── ray_environment.yml      # Conda environment specification
 └── README.md                # This file
+├── MAPPO/                   # MAPPO implementation
+├── RL_env/                  # Environments for training and sampling
 ├── checkpoints/             # Exemplary trained checkpoint (CRM+CfD, 16 agents)
 ├── excel_scenario_files/    # Base excel files with information for the Italian scenarios studied in the publication
-├── penalty_environments/    # Alternative environment implementations (with penalty used in section4)
 ├── utils/                   # Utility scripts for harnessing training data from RLLIB and final results from trained agents, plotting and analysis
 
 ```
