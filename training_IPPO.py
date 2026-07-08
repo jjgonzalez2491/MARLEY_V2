@@ -12,7 +12,7 @@ import math
 from ray import tune
 import numpy as np
 from ray.tune.registry import register_env
-from CM_CfD_EoM_Storage_V46_CM_CfD_planner_opt_tax_V80_CVaR_not_terminal_penalty_original import CM_EoM 
+from CM_CfD_EU_ETS import CM_EoM 
 
 from ray.rllib.algorithms.ppo import PPOConfig 
 from ray.rllib.core.rl_module.rl_module import RLModuleSpec  
