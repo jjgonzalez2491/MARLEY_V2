@@ -35,8 +35,8 @@ This repository contains code used for **EU-ETS under attack? The impact of carb
 
 1. **Clone this repository:**
 ```bash
-   git clone https://github.com/jjgonzalez2491/MARLEY_V1.git
-   cd MARLEY_V1
+   git clone https://github.com/jjgonzalez2491/MARLEY_V2.git
+   cd MARLEY_V2
 ```
 
 2. **Create and activate the conda environment:**
@@ -54,9 +54,10 @@ This repository contains code used for **EU-ETS under attack? The impact of carb
 
 ### Training
 
-To train agents in the electricity market environment:
+To train agents in the electricity market environment using IPPO and MAPPO configurations:
 ```bash
-python training_CM_CfD.py
+python training_IPPO.py
+python training_MAPPO.py
 ```
 To configure the scenario, it is necessary to modify the corresponding variables in the training script and in the corresponding excel file. 
 
@@ -64,11 +65,11 @@ To configure the scenario, it is necessary to modify the corresponding variables
 
 ### Evaluation
 
-To evaluate trained agents:
+To evaluate trained agents (used the configuration file to select the corresponding checkpoint and algorithm):
 ```bash
 python data_CM_CfD.py
 ```
-> **Note:** The evaluation script reads a RLLIB checkpoint obtained after training. For testing purposes, an exemplary checkpoint for a system with **16 agents** under **capacity market and CfD mechanisms** is provided in the `checkpoints/` folder.
+> **Note:** The evaluation script reads a RLLIB checkpoint obtained after training. For testing purposes, an exemplary checkpoint for a system with **16 agents**, for both IPPO and MAPPO configurations, is provided in the `checkpoints/` folder.
 
 ### Data Files
 
