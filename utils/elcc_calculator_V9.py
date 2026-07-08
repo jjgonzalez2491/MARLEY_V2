@@ -654,32 +654,7 @@ class ELCCCalculator:
             print(f"    Energy: {lt_storage_power * self.lt_storage_duration:.1f} MWh")
         
         return st_storage_power, lt_storage_power
-    # ==================================================================
-    # Multi-scenario ELCC calculation
-    # ==================================================================
-    #
-    # The methods below replace the single-scenario versions. They:
-    #
-    #   - Loop over all self.n_scenarios representative days, each weighted
-    #     by self.scenario_probs (matching the environment's sampling).
-    #   - Cache base_eue and eue_perfect per scenario so they are not
-    #     recomputed across calculate_marginal_elcc /
-    #     calculate_reliability_target / calculate_storage_elcc.
-    #   - Skip tech / storage perturbations on scenarios whose base EUE is
-    #     below self.eue_skip_threshold (their contribution to ELCC is 0).
-    #   - Solve scenarios in order of total demand so HiGHS basis warm-start
-    #     reuse is maximized.
-    #
-    # The aggregated outputs are probability-weighted averages across
-    # scenarios:
-    #
-    #     marginal_elcc[j] = sum_s prob_s * elcc_s_j
-    #     storage_elcc[s]  = sum_s prob_s * storage_elcc_s_j
-    #     additional_needed = sum_s prob_s * additional_needed_s
-    #     current_eue       = sum_s prob_s * current_eue_s
-    #     hourly_unserved   = sum_s prob_s * hourly_unserved_s
-    # ==================================================================
-
+        
     def _prepare_all_scenarios(self):
         """Extract demand, availability, inflows for every scenario.
 
