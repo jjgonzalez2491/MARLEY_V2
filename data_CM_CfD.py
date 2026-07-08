@@ -80,19 +80,11 @@ scenarios = {
 
 policy_deterministic, test_init, scenario_name, excel, scenario_tax_decree, scenario_tax_decree_start, mechanism_target, multiplier_long_term_markets, scenario_tax_decree_deactivation_random_flag, MAPPO, shock_flag = scenarios[test_idx]
 
-from CM_CfD_EoM_Storage_V46_CM_CfD_planner_opt_tax_V85_CVaR_not_terminal_penalty_original import CM_EoM
+from CM_CfD_EU_ETS_sampling import CM_EoM
 
 if excel == 1:
     
-    dir_input_data = '050526 Entry data - Italy 2024 Alice - 16 Agents - Pypsa - 10 years - Super Tax - V2.xlsx'
-
-elif excel == 2:
-    
-    dir_input_data = '050526 Entry data - Italy 2024 Alice - 16 Agents - Pypsa - 10 years - Super Tax - V2 - Low.xlsx'
-
-else:
-    
-    dir_input_data = '050526 Entry data - Italy 2024 Alice - 16 Agents - Pypsa - 10 years - Super Tax - V2 - High.xlsx'
+    dir_input_data = '050526 Entry data - Italy 2025 - 16 Agents - Pypsa - 10 years - Super Tax - V2.xlsx'
 
 checkpoint = find_latest_checkpoint(f'CM_EoM_ss_battery_{test_init}', MAPPO)
 
