@@ -1661,7 +1661,3 @@ if __name__ == "__main__":
         pd.DataFrame(array).to_csv(f'Folder_58/{string}/{filename}')
 
     last_time = time.time()
-
-    print("ENV_85")
-    print("Total Time")
-    print(last_time - start_time)
